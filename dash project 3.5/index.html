@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Molle:400i' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: white;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Molle', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: orange;
+  margin: 60px 0 0 0;
+}
+h2 {
+  font-family: 'Molle', cursive;
+  text-align: center;
+  color: purple;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("http://stage.bostonmarketathome.com/files/cache/060fa4ee7437b6d726a662555ea6cc79_f992.jpg");
+}
+.second{
+  background-image: url("http://www.johnsonville.com/recipe/italian-meatballs/image/meatballs.jpg");
+}
+.dessert{
+  background-image: url("http://www.friendlys.com/wp-content/themes/netplus/img/production/detail/ice-cream/cartons_sundae-extreme_sundae-xtreme-candy-bar-swirl.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Jahnaia's restaurant</h1>
+<h2>a New York City cafe</h2>
+<div class="first">
+  <p>Macaroni <span class="price">$10</span><br />
+  <small>A cheesy plate of pasta with chedder, american, and swiss cheese. </small></p>
+</div>
+
+<div class="second">
+  <p>Italian Meatballs <span class="price">$8</span><br />
+  <small>Fresh Italian Meatballs straight from Itay.</small></p>
+</div>
+  
+<div class="dessert">
+  <p>Sundae Nut Football(Ice Cream)<span class="price">$5</span><br />
+  <small>Vanilla with chocolate fudge and peanuts.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
