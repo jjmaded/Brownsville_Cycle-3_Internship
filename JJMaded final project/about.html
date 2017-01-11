@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://www.joytunes.com/images/misc/shutter/pianobeginner.jpg');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+      height: 20%;
+      width: 20%;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="http://artist.com/art-recognition-and-education/wp-content/themes/artist-blog/media-files/2016/05/abstract-6.jpg">
+    <h1>Jahnaia's Blog</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Best Tracks</a></li>
+      <li><a href="#">Worst Tracks</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>The Beginning</h2>
+    <p>I started playing and producing at a very young age. It all started with a small vintage keyboard, upgrading to the casio tk4000. Composers such as Motzart, Scott Joplin, Bach, Bethoveen, and etc made up my soundtrack. With my beats I mimicked producers such as Timberland, Kanye West, Jahlil Beats, and etc. I </p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Musical influences</h2>
+    <p>Some musical influences involve TLC, Missy Elliott, Nas, Erykah Badu, Jill scott, Janelle Monae, Solange, Aaliyah, OSHUN, etc. </p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Performances</h2>
+    <p>Performances include Jazz at Lincoln Center, Carnegie Hall, Madison Square Garden, Time Square, etc.</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
